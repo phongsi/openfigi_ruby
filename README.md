@@ -1,5 +1,9 @@
 # OpenfigiRuby
 
+[![Gem Version](https://badge.fury.io/rb/openfigi_ruby.svg)](https://badge.fury.io/rb/openfigi_ruby)
+[![CI](https://github.com/phongsi/openfigi_ruby/actions/workflows/ci.yml/badge.svg)](https://github.com/phongsi/openfigi_ruby/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.txt)
+
 Ruby client for the [OpenFIGI V3 API](https://www.openfigi.com/api). Maps financial identifiers (ISIN, CUSIP, ticker, etc.) to FIGIs (Financial Instrument Global Identifiers), with support for keyword search and filtering.
 
 ## Installation
