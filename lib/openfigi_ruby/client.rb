@@ -5,8 +5,13 @@ require "json"
 require "uri"
 
 module OpenfigiRuby
+  # HTTP client for the OpenFIGI V3 API.
+  #
+  # Instantiate with an optional API key override, or configure globally via
+  # {OpenfigiRuby.configure} and call +Client.new+ with no arguments.
   class Client
-    # Valid keys for {#mapping_values}.
+    # Valid field names accepted by {#mapping_values}.
+    # @api private
     MAPPING_VALUE_KEYS = %w[idType exchCode micCode currency marketSecDes securityType securityType2].freeze
 
     # @param api_key [String, nil] overrides the globally configured key
@@ -93,6 +98,8 @@ module OpenfigiRuby
 
     private
 
+    # OpenFIGI V3 API base URL.
+    # @api private
     BASE_URL = "https://api.openfigi.com/v3"
 
     def post(path, body)

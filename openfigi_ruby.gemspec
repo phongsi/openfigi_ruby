@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Ruby client for the OpenFIGI V3 API"
   spec.description = "Maps financial identifiers (ISIN, CUSIP, ticker, etc.) to FIGIs via the OpenFIGI V3 API. Supports bulk mapping, keyword search, and filtering."
-  spec.homepage = "https://github.com/psi/openfigi_ruby"
+  spec.homepage = "https://github.com/phongsi/openfigi_ruby"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.1.0"
 
@@ -27,4 +27,9 @@ Gem::Specification.new do |spec|
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.add_development_dependency "minitest", "~> 5.0"
+  spec.add_development_dependency "webmock", "~> 3.0"
+  spec.add_development_dependency "yard", "~> 0.9"
+  spec.add_development_dependency "webrick", "~> 1.0"
 end

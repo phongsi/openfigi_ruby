@@ -1,8 +1,15 @@
 # frozen_string_literal: true
 
 module OpenfigiRuby
+  # Base error class for all OpenfigiRuby errors.
   class Error < StandardError; end
 
+  # Raised when the API returns a non-successful HTTP status.
+  #
+  # @!attribute [r] status_code
+  #   @return [Integer, nil] HTTP status code from the response
+  # @!attribute [r] body
+  #   @return [String, nil] raw response body
   class ApiError < Error
     attr_reader :status_code, :body
 
