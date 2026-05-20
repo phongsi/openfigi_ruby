@@ -7,4 +7,3 @@ gemspec
 
 gem "irb"
 gem "rake", "~> 13.0"
-gem "public_suffix", "< 7.0"

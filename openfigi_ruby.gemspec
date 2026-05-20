@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "Maps financial identifiers (ISIN, CUSIP, ticker, etc.) to FIGIs via the OpenFIGI V3 API. Supports bulk mapping, keyword search, and filtering."
   spec.homepage = "https://github.com/phongsi/openfigi_ruby"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.1.0"
+  spec.required_ruby_version = ">= 3.2.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
